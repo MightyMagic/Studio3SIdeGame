@@ -549,7 +549,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770572522}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildValues, Assembly-CSharp
         m_MethodName: SaveNewValues
         m_Mode: 1
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770572521}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleMenu, Assembly-CSharp
         m_MethodName: LoadByIndex
         m_Mode: 3
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770572521}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleMenu, Assembly-CSharp
         m_MethodName: LoadByIndex
         m_Mode: 3
@@ -3385,7 +3385,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770572521}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleMenu, Assembly-CSharp
         m_MethodName: LoadByIndex
         m_Mode: 3
@@ -4572,7 +4572,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770572521}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleMenu, Assembly-CSharp
         m_MethodName: LoadByIndex
         m_Mode: 3
@@ -5041,7 +5041,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770572521}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleMenu, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -5505,7 +5505,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1770572520}
   - component: {fileID: 1770572521}
-  - component: {fileID: 1770572522}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -5537,37 +5536,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1770572519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6aa2cfce35ea545850bac3a91899d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f29ad6bb37b2c34e917a226f2c7fd0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1770572522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770572519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c21fe9f9fad8c848be102ad5f877e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  variables:
-  - valueSlider: {fileID: 1920774746}
-    playerPrefsKey: PlayerSpeed
-    valueText: {fileID: 623059888}
-  - valueSlider: {fileID: 538905063}
-    playerPrefsKey: MonsterSpeed
-    valueText: {fileID: 1618578462}
-  - valueSlider: {fileID: 1335962370}
-    playerPrefsKey: SprintMultiplier
-    valueText: {fileID: 1988045727}
-  - valueSlider: {fileID: 998378181}
-    playerPrefsKey: SprintTimer
-    valueText: {fileID: 474265420}
-  - valueSlider: {fileID: 569372817}
-    playerPrefsKey: SprintToRestore
-    valueText: {fileID: 1562187453}
 --- !u!1 &1840855955
 GameObject:
   m_ObjectHideFlags: 0
@@ -5785,7 +5756,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770572521}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleMenu, Assembly-CSharp
         m_MethodName: LoadByIndex
         m_Mode: 3
@@ -6578,12 +6549,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1770572521}
         m_TargetAssemblyTypeName: SimpleMenu, Assembly-CSharp
-        m_MethodName: LoadFromStart
-        m_Mode: 1
+        m_MethodName: LoadByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

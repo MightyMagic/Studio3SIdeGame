@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 using Unity.VisualScripting;
 using System.Diagnostics;
 
@@ -51,15 +51,17 @@ public class BehaviorTree : ScriptableObject
 
     }
 
+#if UNITY_EDITOR
+
     public TreeNode CreateNode(System.Type type)
     {
         TreeNode node = ScriptableObject.CreateInstance(type) as TreeNode;
         node.name = type.Name;
-        node.guid = GUID.Generate().ToString();
+        node.guid = UnityEditor.GUID.Generate().ToString();
         nodes.Add(node);
 
-        AssetDatabase.AddObjectToAsset(node, this);
-        AssetDatabase.SaveAssets();
+        UnityEditor.AssetDatabase.AddObjectToAsset(node, this);
+        UnityEditor.AssetDatabase.SaveAssets();
 
         return node;
     }
@@ -68,9 +70,9 @@ public class BehaviorTree : ScriptableObject
     {
         nodes.Remove(node);
 
-        AssetDatabase.RemoveObjectFromAsset(node);
+        UnityEditor.AssetDatabase.RemoveObjectFromAsset(node);
 
-        AssetDatabase.SaveAssets();
+        UnityEditor.AssetDatabase.SaveAssets();
     }
 
     public void AddChild(TreeNode parent, TreeNode child)
@@ -141,6 +143,7 @@ public class BehaviorTree : ScriptableObject
 
         return children;
     }
+#endif
 
     public BehaviorTree Clone()
     {

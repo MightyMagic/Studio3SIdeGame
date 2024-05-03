@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5500848390088307046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cd8194f7b4db146b7b4289b3a34fbd, type: 3}
+  m_Name: ChaseNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a7df9fc0b218d8b41926477091d45895
+  position: {x: 686.00006, y: -38.50003}
+  goName: Wendigo12
+  attackDistance: 3
+--- !u!114 &-5235454165799064792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56be9e9bbf3af1440a55c3517a9b68b7, type: 3}
+  m_Name: AttackNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 48de27f36398028409452478dc443a25
+  position: {x: 686, y: -180}
+  goName: Wendigo12
+  attackDistance: 4
+  alertDistance: 10
+  attackCoolDown: 3
+--- !u!114 &-2559307441186727403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a723774f30b28438a50e39c9887252, type: 3}
+  m_Name: PatrolNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5508b1b1af4b6a94b91d4c6c3cc47ebb
+  position: {x: 686, y: 95}
+  goName: Wendigo12
+  patrolObjectName: PatrolPoints
+  chaseDistance: 20
+  alertDistance: 40
+  targets: []
+--- !u!114 &-2553142382035100576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a86ce6779e8614c913c3361393c46b, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 234f099b81b1317409fd66a9f27bc6aa
+  position: {x: 409.59998, y: 0}
+  children:
+  - {fileID: -2559307441186727403}
+  - {fileID: -5500848390088307046}
+  - {fileID: -5235454165799064792}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e52b4536cf4104a90b0128a9b1b16d, type: 3}
+  m_Name: WendigoTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 8858423753870548753}
+  treeState: 0
+  nodes:
+  - {fileID: 8858423753870548753}
+  - {fileID: 2319188393774444704}
+  - {fileID: -2553142382035100576}
+  - {fileID: -2559307441186727403}
+  - {fileID: -5500848390088307046}
+  - {fileID: -5235454165799064792}
+  restartDelay: 0
+--- !u!114 &2319188393774444704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ac13e9191505c459a97cd2c6105f39, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 44762303273110c44a18c9df4dce9b34
+  position: {x: 205, y: 0}
+  child: {fileID: -2553142382035100576}
+--- !u!114 &8858423753870548753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd1d8e0783010b4f8f919841982e87e, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a4f7a3a8b6b1d634ab592c97f7955311
+  position: {x: 0, y: 0}
+  child: {fileID: 2319188393774444704}

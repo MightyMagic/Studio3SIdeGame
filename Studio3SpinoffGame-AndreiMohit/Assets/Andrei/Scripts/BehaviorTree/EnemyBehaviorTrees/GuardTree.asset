@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5411642554033842499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccaa866552638b143928ce33e3355ece, type: 3}
+  m_Name: GuardNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ae5991cdcd5e1dc4b98c1a73a287abea
+  position: {x: 604.25006, y: -17.027985}
+  goName: GuardingEnemy
+  alertDistance: 20
+--- !u!114 &-2500101910158952311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56be9e9bbf3af1440a55c3517a9b68b7, type: 3}
+  m_Name: AttackNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6d653a3bd64c2a84d87bf81ae1c14e32
+  position: {x: 602, y: -155.67499}
+  goName: GuardingEnemy
+  attackDistance: 6
+  alertDistance: 20
+  attackCoolDown: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e52b4536cf4104a90b0128a9b1b16d, type: 3}
+  m_Name: GuardTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 8817647499382271778}
+  treeState: 0
+  nodes:
+  - {fileID: 8817647499382271778}
+  - {fileID: 4927566473466438189}
+  - {fileID: 8330289163285168580}
+  - {fileID: -5411642554033842499}
+  - {fileID: 7559657965074918905}
+  - {fileID: -2500101910158952311}
+  restartDelay: 0
+--- !u!114 &3314227018626903326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cd8194f7b4db146b7b4289b3a34fbd, type: 3}
+  m_Name: ChaseNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3322e0af9e264eb4b823203d982d41c1
+  position: {x: 649, y: -127.399994}
+  goName: GuardingEnemy
+  attackDistance: 4
+--- !u!114 &4927566473466438189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ac13e9191505c459a97cd2c6105f39, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4bd3b65f783f8ca4dae2fd96df263619
+  position: {x: 189.08, y: 0}
+  child: {fileID: 8330289163285168580}
+--- !u!114 &7559657965074918905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cd8194f7b4db146b7b4289b3a34fbd, type: 3}
+  m_Name: ChaseNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1d1c92e7914647f4f9cead2307e90733
+  position: {x: 588.5786, y: 113.57893}
+  goName: GuardingEnemy
+  attackDistance: 4
+--- !u!114 &8330289163285168580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a86ce6779e8614c913c3361393c46b, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 04cec951dfc37104f93910d60d644562
+  position: {x: 377, y: 0}
+  children:
+  - {fileID: -5411642554033842499}
+  - {fileID: 7559657965074918905}
+  - {fileID: -2500101910158952311}
+--- !u!114 &8817647499382271778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd1d8e0783010b4f8f919841982e87e, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 112296e367c67f84e8cb83c756172d31
+  position: {x: 0, y: 0}
+  child: {fileID: 4927566473466438189}

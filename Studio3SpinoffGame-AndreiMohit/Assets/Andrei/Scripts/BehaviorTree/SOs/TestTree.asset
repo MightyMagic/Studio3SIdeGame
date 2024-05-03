@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8772960483400486201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400df03e90f34d6468d77a68d354cb88, type: 3}
+  m_Name: DebugNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a912b10d6bace7946994ed8807c68a5b
+  position: {x: 525, y: 423.41156}
+  message: Three
+--- !u!114 &-7042213841077268106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5900f6219a412b4d95808910b39629f, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e29b15747723a1b459801eb23d978928
+  position: {x: 537.00006, y: 287.52087}
+  duration: 1
+--- !u!114 &-3338240552296443041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400df03e90f34d6468d77a68d354cb88, type: 3}
+  m_Name: DebugNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5aa03e3e2aeb09e48b0fff8e6a978aba
+  position: {x: 524.70184, y: -115.586464}
+  message: One!
+--- !u!114 &-2826917079093448875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd1d8e0783010b4f8f919841982e87e, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 6e5fe32244c154c449852a17a88753ad
+  position: {x: 0, y: 0}
+  child: {fileID: 7556542244196879543}
+--- !u!114 &-1621186107738848823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a86ce6779e8614c913c3361393c46b, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 44bf5156f4019ac4bb3564abd9fbe80d
+  position: {x: 242.65001, y: 0.0000019073486}
+  children:
+  - {fileID: -3338240552296443041}
+  - {fileID: 1316277480205587164}
+  - {fileID: 3485586201986347933}
+  - {fileID: -7042213841077268106}
+  - {fileID: -8772960483400486201}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e52b4536cf4104a90b0128a9b1b16d, type: 3}
+  m_Name: TestTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -2826917079093448875}
+  treeState: 0
+  nodes:
+  - {fileID: -2826917079093448875}
+  - {fileID: -1621186107738848823}
+  - {fileID: -3338240552296443041}
+  - {fileID: 1316277480205587164}
+  - {fileID: 3485586201986347933}
+  - {fileID: -7042213841077268106}
+  - {fileID: -8772960483400486201}
+  - {fileID: 7556542244196879543}
+--- !u!114 &1316277480205587164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5900f6219a412b4d95808910b39629f, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5506374fb93b9034d9f827a1530c4034
+  position: {x: 525.00006, y: 23.562572}
+  duration: 1
+--- !u!114 &3485586201986347933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400df03e90f34d6468d77a68d354cb88, type: 3}
+  m_Name: DebugNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ea33807b8909fd04e85ef7f2d74057aa
+  position: {x: 525.00006, y: 148.91647}
+  message: Two!
+--- !u!114 &7556542244196879543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ac13e9191505c459a97cd2c6105f39, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a80af5b8221ea7845b3a87ed5b3cc14f
+  position: {x: 0, y: 0}
+  child: {fileID: 0}

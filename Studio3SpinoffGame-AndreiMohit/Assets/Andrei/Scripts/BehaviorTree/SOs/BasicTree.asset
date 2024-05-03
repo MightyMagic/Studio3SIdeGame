@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1794285803697307547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400df03e90f34d6468d77a68d354cb88, type: 3}
+  m_Name: DebugNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6932542f7a9fa434cb16fdbac095aa9f
+  position: {x: 0, y: 0}
+  message: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e52b4536cf4104a90b0128a9b1b16d, type: 3}
+  m_Name: BasicTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 2262450467071887485}
+  treeState: 0
+  nodes:
+  - {fileID: 2262450467071887485}
+  - {fileID: -1794285803697307547}
+--- !u!114 &2262450467071887485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd1d8e0783010b4f8f919841982e87e, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: cf4f6c81bd8a2fa469d087e3393152a4
+  position: {x: 0, y: 0}
+  child: {fileID: 0}

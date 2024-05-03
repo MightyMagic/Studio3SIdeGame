@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BehaviorTree">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAEAAAEAAAAAEAAAAEAAIAQAAAIAAAAAAAIBA=</HashCode>
+      <FileName>Assets\Andrei\Scripts\BehaviorTree\BehaviorTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BehaviorTreeRunner">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Andrei\Scripts\BehaviorTree\BehaviorTreeRunner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tree" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CompositeNode">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Andrei\Scripts\BehaviorTree\CompositeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DecoratorNode">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Andrei\Scripts\BehaviorTree\DecoratorNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeafNode" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Andrei\Scripts\BehaviorTree\LeafNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RootNode">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEACAAAAAAAAAAAAAAEAAAAEAABA=</HashCode>
+      <FileName>Assets\Andrei\Scripts\BehaviorTree\RootNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TreeNode" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAIgAEAAAAAAAEAEAAAAEAABA=</HashCode>
+      <FileName>Assets\Andrei\Scripts\BehaviorTree\TreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.ScriptableObject" Collapsed="true">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

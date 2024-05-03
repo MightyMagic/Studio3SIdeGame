@@ -38,4 +38,12 @@ public class SwarmManager : MonoBehaviour
         BoidController boidController = boidInstance.GetComponent<BoidController>();
         _boids.Add(boidController);
     }
+
+    private void OnDestroy()
+    {
+        foreach(BoidController boid in _boids)
+        {
+            Destroy(boid.gameObject);
+        }
+    }
 }

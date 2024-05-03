@@ -63,6 +63,7 @@ public class AttackNode : LeafNode
         {
             timer = 0f;
             // Attack!
+            Attack();
             //animator.SetBool("Attack", true);
             //animator.SetBool("Attack", false);
 
@@ -87,5 +88,10 @@ public class AttackNode : LeafNode
             }
 
         }
+    }
+
+    void Attack()
+    {
+        player.GetComponent<PlayerHealth>().GotHit();
     }
 }

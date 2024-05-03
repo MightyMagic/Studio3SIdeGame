@@ -6,12 +6,14 @@ public class MonsterDeath : MonoBehaviour
 {
     [SerializeField] int lives;
     public int hitCount = 0;
+
+    
+
     void Start()
     {
-        
+        PlayerPrefs.SetInt("Kills", 0);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -23,7 +25,10 @@ public class MonsterDeath : MonoBehaviour
         {
             hitCount++;
             if(hitCount == lives)
+            {
                 Destroy(gameObject);
+                PlayerPrefs.SetInt("Kills", PlayerPrefs.GetInt("Kills") + 1);
+            }
         }
     }
 
@@ -33,7 +38,10 @@ public class MonsterDeath : MonoBehaviour
         {
             hitCount++;
             if (hitCount == lives)
+            {
                 Destroy(gameObject);
+                PlayerPrefs.SetInt("Kills", PlayerPrefs.GetInt("Kills") + 1);
+            }
         }
     }
 }
